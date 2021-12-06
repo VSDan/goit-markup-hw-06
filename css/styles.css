@@ -696,6 +696,9 @@ text-align: center;
 letter-spacing: 0.06em;
 color: var(--main-title-color);
 margin-left:12px;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
@@ -704,8 +707,13 @@ margin-left:12px;
 
 }
 
-.input-icon {
-  fill:tomato
+.input-icon-mail {
+  fill:var(--main-title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7px;
+
 
 }
 
@@ -1031,6 +1039,11 @@ display: block;
   margin-left: 5px;
 }
 
+.heckbox-modal-policy:focus{
+  outline: var(--main-title-color);
+  color: var(--accent-color);
+}
+
 .check-item {
 width: 16px;
 height: 15px;
@@ -1038,12 +1051,20 @@ border: 2px solid #212121;
 border-radius: 2px;
 
 margin-right: 7px;
-display:flex; */
+display:flex; 
 align-items: center;
 justify-content: center;  
 padding-left: 2px;
 padding-top: 3px; 
 } 
+
+.check-item:focus {
+  border: 2px solid var(--accent-color);
+  box-sizing: border-box;
+  fill:var(--accent-color);
+  color: var(--accent-color);
+  outline:var(--accent-color);
+}
 
 .check-icon {
   fill: #ffffff
